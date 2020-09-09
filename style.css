@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("background.jpg");
+}
+
+body .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body .title {
+  text-align: center;
+  font-size: 50px;
+  color: #d57df5;
+  text-shadow: 1px 1px 2px white;
+  font-family: 'Gabriela', serif;
+  font-weight: 100;
+}
+
+body .header {
+  background-color: black;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .header .link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+body .header .link:hover {
+  color: orange;
+}
+
+body .main {
+  width: 260px;
+  margin: auto;
+  -webkit-box-shadow: 1px 1px 1px #d57df5, -1px -1px 1px #d57df5;
+          box-shadow: 1px 1px 1px #d57df5, -1px -1px 1px #d57df5;
+  background-color: #141414;
+  font-family: 'Gabriela', serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 30px;
+}
+
+body .main .number_container {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px -1px 2px orangered, 0 0 3px orange;
+          box-shadow: 0px -1px 2px orangered, 0 0 3px orange;
+  cursor: pointer;
+}
+
+body .main .number_container:hover {
+  background-color: white;
+  color: black;
+}
+
+body .main .number {
+  position: relative;
+  bottom: 10px;
+}
+/*# sourceMappingURL=number-game.css.map */
